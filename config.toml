@@ -1,0 +1,46 @@
+baseURL = "https://gremlins.io/walkthroughs/static-site"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Static Site on AWS"
+theme = "hugo-learn-theme"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+  editURL = "https://github.com/coderturtle/gremlindojo"
+  description = "Dynamic architecture walkthrough of hosting a static site on AWS"
+  author = "Derm Duncan"
+  themeVariant = "blue"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  disableMermaid = false
+  customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
+  titleSeparator = "::"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Static Site on AWS"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/coderturtle/gremlindojo/static-site"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Showcases"
+url = "https://gremlins.io/cloud-gremlin/"
+weight = 11
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
